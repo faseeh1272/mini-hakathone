@@ -205,22 +205,52 @@ ul{
   transition: all 0.3s ease-in-out;
 }
 
-/* form-section start
-.form-section{
+.footer-section{
   margin-top: 20px;
-  padding: 15px;
+  background-color: black;
+  color: white;
 }
 
-.form{
-
-  line-height: 30px;
-}
-input{
-  width: 300px;
-  padding: 15px;
+.foot-nav{
+  color: white;
 }
 
-textarea{
-  width: 300px;
+.foot-list{
+  text-decoration: underline;
 }
- */
+.nav-logo{
+  width: 200px;
+  filter: invert(1);
+}
+
+/* section-four */
+
+.section-four-footer{
+  background-color: black;
+  
+}
+.a-footer{
+text-decoration: none;
+font-size: 20px;
+font-weight: 600;
+background-color: #B9FF66;
+padding: 5px;
+margin-top: 10px;
+}
+.footer-content{
+  text-transform: lowercase;
+  color: white;
+}
+.footer-line{
+  border: 2px white;
+  color: white;
+}
+#button{
+  background-color: #B9FF66;
+}
+.footer-down{
+  color: white;
+}
+.footer-down a{
+  color: white;
+}
