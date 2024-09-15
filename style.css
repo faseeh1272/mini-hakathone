@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #b9ff66;
+  --secondary-color: #191a23;
+  --body-color: #f3f3f3;
+}
 img{
     max-width: 100%;
 }
@@ -88,7 +94,7 @@ ul{
 
 /* section-two start */
 .engin{
-    font-size: 20px;
+    font-size: 15px;
     background-color: #B9FF66;
 }
 .heading-engin{
@@ -128,3 +134,93 @@ ul{
 
 /* section-three end */
 
+
+/* accordian-section */
+
+.working-process .accordion-item {
+  border: 1px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  border-radius: 30px;
+  overflow: hidden;
+  /* padding: 20px; */
+  background-color: var(--body-color);
+}
+
+.working-process .accordion-item .accordion-button {
+  background-color: var(--body-color);
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.working-process .accordion-item .accordion-collapse.collapse.show,
+.working-process .accordion-item .accordion-collapse.collapse.show {
+  background-color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.working-process .accordion-item .accordion-button:not(.collapsed) {
+  color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  background-color: var(--primary-color) !important;
+  box-shadow: none;
+}
+
+.working-process .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+
+.working-process .accordion-item .accordion-collapse .accordion-body {
+  padding: 20px 40px;
+}
+
+.working-process .accordion-item .accordian-numbers {
+  font-size: 44px;
+  padding-right: 20px;
+}
+
+.accordion-button::after {
+  background-image: none !important;
+  font-family: "Font Awesome 6 Free" !important;
+  content: "\f067"!important;
+  height: 35px;
+  width: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--body-color);
+  color: var(--secondary-color);
+}
+
+.accordion-button:not(.collapsed)::after{
+ 
+  background-image: none !important;
+  
+  content: "\f068"!important;
+}
+
+.working-process .accordion-item .collapsing {
+  transition: all 0.3s ease-in-out;
+}
+
+/* form-section start
+.form-section{
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.form{
+
+  line-height: 30px;
+}
+input{
+  width: 300px;
+  padding: 15px;
+}
+
+textarea{
+  width: 300px;
+}
+ */
